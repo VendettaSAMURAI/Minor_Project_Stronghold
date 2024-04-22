@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronghold website</title>
+    <!-- favicon -->
+    <link rel="icon" href="global-market.png" type="image/x-icon">
+    <!-- css file link here -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Python link -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    
+</head>
+
+<body>
+
+     <!-- Preloader -->
+     <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader ends -->
+
+    <!-- header starts from here -->
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="#home" class="logo"><i class="fas fa-money-bill-trend-up"></i>
+                Stronghold</a>
+
+            <a href="#Stock analyser" class="btn">Stock analyser</a>
+
+        </section>
+
+    </header>
+    <!-- header ends here -->
+
+    <!-- navbar starts from here -->
+
+    <div class="navbar">
+        <nav class="nav">
+            <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="#About us"><i class="fas fa-circle-info"></i><span>About us</span></a>
+            <a href="#Contact"><i class="fas fa-envelope"></i><span>Contact us</span></a>
+            <a href="#Prediction"><i class="fas fa-comments-dollar"></i><span>Prediction</span></a>
+            <a href="#home"><i class="fas fa-user"></i><span>Login</span></a>
+        </nav>
+    </div>
+
+
+    <!-- navbar ends from here -->
+    <!-- home section starts from here -->
+    <section class="home" id="home">
+        <div class="flex">
+            <div class="content">
+                <h3>Prediction of stocks journey with us👍</h3>
+                <p>Unveiling Profits, Securing Futures: Your Stock Analysis Stronghold. we took stocks of nifty50 and
+                    BSE sensex for prediction and safeguard your investment in any situation using our analyser.</p>
+                <!-- Use anchor tag styled as a button -->
+                <a href="#" class="btn" id="startAnalyzerBtn">Start Stock Analyzer</a>
+            </div>
+            <div class="image">
+                <img src="Finance app-bro.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Add a click event listener to the button
+        document.getElementById("startAnalyzerBtn").addEventListener("click", function() {
+            // Send a request to the server to launch Streamlit
+            fetch("/launchStreamlit")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Failed to launch Streamlit");
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log(data); // Log any response from the server
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+        });
+    </script>
+    
+
+
+
+
+    <!-- home section ends here -->
+
+    <!-- Prediction section starts from here -->
+    <section class="prediction">
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-money-bill-trend-up"></i>
+                <h3>Extra income</h3>
+                <p>Invest wisely for the rewards and empower your financial decision with our all predictions that had
+                    been made for forecasting your tommorow sucess today.</p>
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-coins"></i>
+                <h3>financial assistant</h3>
+                <p>Unlock the potential of your investments and make informed decisions with our expert financial
+                    guidance.</p>
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-shield-halved"></i>
+                <h3>Account credentials protection</h3>
+                <p>Secure your account credentials and make informed financial decisions with our predictive insights,
+                    ensuring tomorrow's success starts today.</p>
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-credit-card"></i>
+                <h3>Payments</h3>
+                <p>Streamline your transactions with effortless payments, ensuring convenience and efficiency every step
+                    of the way.</p>
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Get round-the-clock assistance from our dedicated support team, ensuring you're never alone in your
+                    investment journey.</p>
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-book"></i>
+                <h3>Educational Resources</h3>
+                <p>Access a wealth of educational materials and resources curated to enhance your knowledge and skills
+                    in stock analysis and investing.</p>
+                < </div>
+
+
+
+            </div>
+    </section>
+    <!-- Prediction section ends here -->
+
+    <!-- About us section works from here -->
+
+    <div class="about-us" id="about">
+
+        <section class="flex">
+
+            <div class="content">
+                <h3>benefits we offer 😊</h3>
+                <p>Unlock the potential of your investments with our stock analyzer service. Enjoy access to
+                    comprehensive analysis tools, real-time data, and expert insights, empowering you to make informed
+                    decisions and maximize your returns in the stock market.</p>
+                <p>Gain a competitive edge in the stock market with our powerful stock analyzer tool. From in-depth
+                    market research to personalized investment strategies, we provide you with the insights and tools
+                    needed to navigate the complexities of the stock market with confidence, helping you achieve your
+                    financial goals efficiently and effectively.</p>
+                <a href="#" class="btn">Learn manual of stock analayser</a>
+            </div>
+
+            <div class="image">
+                <img src="Finance app-amico.png" alt="">
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+    <!-- About  us section ends here -->
+    <!-- Download Stronghold Stock analayser sections starts here -->
+
+    <div class="download" id="download">
+        <section class="flex">
+
+            <div class="image">
+                <img src="App data-amico.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Download and start predicting</h3>
+                <p>Get ready to make accurate predictions by downloading our Stronghold Stock analayser app! With our user-friendly interface and
+                    advanced algorithms, you'll have the power to forecast outcomes with confidence</p>
+                    <div class="links">
+                        <a href="#"><i class="fab fa-google-play"></i>Google Play</a>
+                        <a href="#"><i class="fab fa-apple"></i>Apple Store</a>
+                    </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Download Stronghold Stock analayser sections ends here -->
+<!-- Contact us section starts from here -->
+<section class="contact-us">
+    <div class="flex">
+
+        <div class="content">
+            <h3>Contact with our exclusive assistance 🧑‍💻🤝👩‍💻</h3>
+            <p>Reach out to our dedicated team of experts for personalized support and guidance tailored to your
+                investment needs. Whether you have questions, need assistance, or want to explore our services
+                further, we're here to help you every step of the way.</p>
+            <p>PH: 999XXXXX</p>
+            <p>Gmail: Stronghold@gmail.com</p>
+        </div>
+    </div>
+</section>
+<!-- Contact us section ends here -->
+
+<!-- Stock Section starts here -->
+<div class="brands">
+    <div class="brands-container">
+        <img src="bmw-logo-svgrepo-com.svg" alt="">
+        <img src="apple-logo-svgrepo-com.svg" alt="">
+        <img src="facebook-icon-white-logo-svgrepo-com.svg" alt="">
+        <img src="forbes-logo-svgrepo-com.svg" alt="">
+        <img src="mcdonald-s-15-logo-svgrepo-com.svg" alt="">
+        <img src="google-icon-logo-svgrepo-com.svg" alt="">
+        <img src="microsoft-logo-svgrepo-com.svg" alt="">
+        <img src="xbox-one-logo-svgrepo-com.svg" alt="">
+        <img src="coca-cola-logo-svgrepo-com.svg" alt="">
+    </div>
+</div>
+<!-- Stock Section ends here -->
+
+<!-- footer section works from here by Aviral :) -->
+<footer class="footer">
+    <section class="box-container">
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#home"><i class="fas fa-angle-right"></i>Home</a>
+            <a href="#About us"><i class="fas fa-angle-right"></i>About us</a>
+            <a href="#download"><i class="fas fa-angle-right"></i>Contact us</a>
+            <a href="#Prediction"><i class="fas fa-angle-right"></i>Prediction</a>
+        </div>
+        <div class="box">
+            <h3>useful links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i>FAQ</a>
+            <a href="#"><i class="fas fa-angle-right"></i>Login/Register</a>
+            <a href="#"><i class="fas fa-angle-right"></i>Privacy policy</a>
+            <a href="#"><i class="fas fa-angle-right"></i>Terms&Conditions</a>
+        </div>
+        <div class="box">
+            <h3>contact-us</h3>
+            <a href="tel:1234567890"><i class="fas fa-phone"></i>+9199923XXX</a>
+            <a href="tel:1112223333"><i class="fas fa-phone"></i>+9188823XXX</a>
+            <a href="mailto:Stronghold@gmail.com"><i class="fas fa-envelope"></i>Stronghold@gmail.com</a>
+        </div>
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fab fa-youtube"></i>Youtube</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fab fa-github"></i>github</a>
+        </div>
+    </section>
+
+        <div class="credit">Created By <span>Team Stronghold</span>| all rights reserved!</div>
+
+
+</footer>
+<!-- footer section ends here by Aviral :) -->
+
+ <!-- preloader links here -->
+ <link rel="stylesheet" href="script.js">
+
+    <!-- stronghold js files here -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
